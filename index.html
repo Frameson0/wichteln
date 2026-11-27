@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wunschliste ist umgezogen</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // Alles unter /wichteln/ auf /wunschliste/ umleiten, inklusive Unterseiten, ?url=… (Teilen) und #/…
+    (function () {
+      var l = window.location;
+      var path = l.pathname.replace(/^\/wichteln(\/|$)/, '/wunschliste/');
+      if (path === l.pathname) path = '/wunschliste/';
+      l.replace(path + l.search + l.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://frameson0.github.io/wunschliste/">
+  <style>body{font-family:system-ui,sans-serif;text-align:center;padding:30vh 20px;color:#1e2b3c;background:#f7f4ef}</style>
+</head>
+<body>
+  <p>Die Wunschliste ist umgezogen: <a href="https://frameson0.github.io/wunschliste/">frameson0.github.io/wunschliste</a></p>
+</body>
+</html>
